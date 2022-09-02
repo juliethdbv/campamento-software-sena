@@ -1,0 +1,30 @@
+[
+    {
+        "name" : "PHP Advace Mode",
+        "website" : "larabel.com/bootcamps",
+        "phone" : "(1111)111-11-11",
+        "description" : "PHP fror senior developers",
+        "average_rating" : 1,
+        "average_cost" : 0,
+        "user_id" : 1
+    },
+
+    {
+        "name" : "PHYTON for Data Science",
+        "website" : "phyton.com/bootcamps",
+        "phone" : "(2222)222-22-22",
+        "description" : "PHYTON for Beginners",
+        "average_rating" : 1,
+        "average_cost" : 0,
+        "user_id" : 1
+    },
+    {
+        "name" : "JAVA and Scala Mode",
+        "website" : "scala.com/bootcamps",
+        "phone" : "(3333)333-33-33",
+        "description" : "Scala for data Developers",
+        "average_rating" : 1,
+        "average_cost" : 0,
+        "user_id" : 1
+    }
+]
