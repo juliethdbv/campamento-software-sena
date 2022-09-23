@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Bootcamp;
+use App\Models\Course;
 
-class BootcampController extends Controller
+class CourseController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class BootcampController extends Controller
      */
     public function index()
     {
-        return Bootcamp::all();
+        return Course::all();
     }
 
     /**
@@ -26,8 +26,8 @@ class BootcampController extends Controller
     public function store(Request $request)
     {
         //Captura el Payload
-        //Crear nuevo Bootcamp
-        return Bootcamp::create(
+        //Crear nuevo Course
+        return Course::create(
             $request->all()
         );
     }
@@ -40,7 +40,7 @@ class BootcampController extends Controller
      */
     public function show($id)
     {
-        return Bootcamp::find($id);
+        return Course::find($id);
     }
 
     /**
@@ -52,12 +52,12 @@ class BootcampController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //1. Encontrar el bootcamp por id
-        $b = Bootcamp::find($id);
+        //1. Encontrar el Course por id
+        $c = Course::find($id);
         //2. Lo actualiza
-        $b->update($request->all());
-        //3. Enviar response con el bootcamp actualizado
-        return $b;
+        $c->update($request->all());
+        //3. Enviar response con el Course actualizado
+        return $c;
     }
 
     /**
@@ -68,11 +68,11 @@ class BootcampController extends Controller
      */
     public function destroy($id)
     {
-        //1. Encontrar el bootcamp por id
-        $b = Bootcamp::find($id);
+        //1. Encontrar el Course por id
+        $c = Course::find($id);
         //2. Lo elimina
-        $b->delete();
+        $c->delete($request->all());
         //3. Response con el objeto eliminado
-        return $b;
+        return $c;
     }
 }
